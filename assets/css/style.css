@@ -1,1 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Salsa&display=swap');
+
+h1 {
+    color: white;
+    font-family: 'Salsa', cursive;
+}
+
+
+/* === Header Layout === */
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #e51a1a;
+  color: white;
+}
+
+/* Title */
+.site-title {
+  font-family: 'Salsa', cursive;
+  font-size: 2rem;
+  margin: 0 1rem; /* space around */
+}
+
+/* Nav links (desktop) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-left: auto; /* push menu to the right */
+  padding-left: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none; /* hidden checkbox */
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0.5rem; /* space between burger + title */
+  display: none; /* only show on mobile */
+  line-height: 1;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%; /* full width below header */
+    margin-top: 1rem;
+  }
+
+  /* use ~ instead of + so title can sit in between */
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* keep menu under burger + title */
+  .page-header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .site-title {
+    flex-grow: 1;
+  }
+}

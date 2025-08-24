@@ -81,3 +81,21 @@ h1 {
     flex-grow: 1;
   }
 }
+
+/* Main content */
+main {
+  font-family: 'Inter', sans-serif;
+  flex: 1 0 auto;
+  line-height: 1.6;
+}
+
+#hero {
+    height: 500px;
+    width: 100%;
+    background-image: url(../images/hero-image-dancers.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+

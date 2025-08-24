@@ -97,5 +97,28 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0.8;
 }
 
+.hero-content {
+    color: white;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    gap: 1rem;
+    padding: 2rem;
+    color: white;
+    font-family: 'Salsa', cursive;
+    opacity: 0.9;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+}

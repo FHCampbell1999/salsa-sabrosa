@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Salsa&display=swap');
 
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font: 16px 'Inter', sans-serif;
+}
+
 h1 {
     color: white;
     font-family: 'Salsa', cursive;
@@ -92,7 +100,7 @@ main {
 #hero {
     height: 500px;
     width: 100%;
-    background-image: url(../images/hero-image-dancers.png);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.45)), url(../images/hero-image-dancers.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,10 +109,11 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    opacity: 0.8;
 }
 
 .hero-content {
+    margin-left: 20px;
+    margin-right: 20px;
     color: white;
     display: flex;
     flex-direction: column; /* stack children vertically */
@@ -121,4 +130,41 @@ main {
 
 .hero-content h3 {
   font-size: 1.5rem;
+}
+
+/* Why dance with us? section */
+
+#why-section {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.reason {
+    background-color: #e5b21a;
+    margin: 1rem;
+    Border-radius: 20px;
+    padding: 2rem;
+}
+
+#why-section h2 {
+    font-family: 'Salsa', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+#reasons-container h3 {
+    font-family: 'Salsa', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Align icons with h3 elements */
+.reason h3 {
+  display: inline-flex;      
+  align-items: center;          
+  gap: 0.5rem;
+  line-height: 1.1;             
+  margin: 0 0 .5rem 0;
 }

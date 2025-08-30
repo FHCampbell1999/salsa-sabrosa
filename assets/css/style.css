@@ -168,3 +168,53 @@ main {
   line-height: 1.1;             
   margin: 0 0 .5rem 0;
 }
+
+/* Footer */
+footer {
+  background: #e51a1a;
+  color: #fff;
+  padding: 1rem;
+}
+
+#contact-info h4 {
+  margin: 0 0 .5rem;
+  font-size: 2rem;
+}
+
+.contact-list {
+  margin: 0 0 .75rem;
+  padding: 0;
+}
+
+.contact-list > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .5rem .75rem;
+  margin: .25rem 0;
+}
+
+.contact-list dt {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.contact-list dd {
+  margin: 0;              
+}
+
+footer a {
+  color:#e5b21a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.address {
+  margin: .5rem 0 0;
+  line-height: 1.5;
+  font-style: normal;    
+}
+
+.address h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

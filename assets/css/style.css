@@ -142,7 +142,7 @@ main {
 .reason {
     background-color: #e5b21a;
     margin: 1rem;
-    Border-radius: 20px;
+    Border-radius: 50%;
     padding: 2rem;
 }
 
@@ -217,4 +217,26 @@ footer a {
 .address h6 {
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+/* Bookings page */
+
+#class-intro {
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-family: 'Salsa', cursive;
+    background: linear-gradient(135deg, #000 0%, #e51a1a 100%);             
+    display: grid;              
+  }
+
+.class-image {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin-inline: auto; /* centers it */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
 }
